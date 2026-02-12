@@ -8,7 +8,7 @@ import facebook from "../public/icons/fb.png";
 import twitter from "../public/icons/x.png";
 import whatsapp from "../public/icons/WhatsApp Logo.svg";
 import linkedin from "../public/icons/linkedin.svg";
-import google from "../public/icons/Google Logo.svg";
+import google from "../public/icons/youtube.png";
 import { fetchApi } from "@/lib/api";
 import ios from "../public/icons/ios.svg";
 import android from "../public/icons/android.png";
