@@ -44,19 +44,19 @@ export default function Footer() {
           {/* --- Column 1: Logos + Contact Info --- */}
           <div className="col-span-1 md:col-span-3 flex flex-col space-y-4">
             <div className="flex items-center space-x-6">
-              {setting?.footerLogoFirst && (
+              {settingM?.logo && (
                 <div className="border-r pr-5">
                   <img
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${setting.footerLogoFirst}`}
-                    alt={setting?.site_name || "Royal Monarch"}
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${settingM.logo}`}
+                    alt={settingM?.site_name || "Royal Monarch"}
                    
                     className="h-[85px] w-[174px] object-contain !max-w-none !h-[85px] !w-[174px]"
                   />
                 </div>
               )}
-              {setting?.footerLogoSecond && (
+              {setting?.logo && (
                 <img
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${setting.footerLogoSecond}`}
+                  src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${setting.logo}`}
                   alt={setting?.site_name || "Ojus One"}
              
                   className="h-[85px] w-[174px] object-contain !max-w-none !h-[85px] !w-[174px]"
@@ -232,11 +232,11 @@ export default function Footer() {
                 {/* --- Column 1: Logos + Contact Info --- */}
                 <div className=" flex flex-col space-y-4">
                     <div className="grid grid-cols-2 items-center pb-4 gap-6">
-                        {setting?.footerLogoFirst && (
+                        {settingM?.logo && (
                             <div className="flex justify-center border-r pr-5">
                                 <Image
-                                    src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${setting.footerLogoFirst}`}
-                                    alt={setting?.site_name || "Royal Monarch"}
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${settingM.logo}`}
+                                    alt={settingM?.site_name || "Royal Monarch"}
                                     width={110}
                                     height={85}
                                     className="object-contain"
@@ -244,10 +244,10 @@ export default function Footer() {
                             </div>
                         )}
 
-                        {setting?.footerLogoSecond && (
+                        {setting?.logo && (
                             <div className="flex justify-center">
                                 <Image
-                                    src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${setting.footerLogoSecond}`}
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${setting.logo}`}
                                     alt={setting?.site_name || "Ojus One"}
                                     width={174}
                                     height={85}

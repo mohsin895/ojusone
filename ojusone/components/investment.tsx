@@ -89,9 +89,9 @@ export default function InvestmentCalculator() {
   const results = calculatorType === 'sip' ? calculateSIP() : calculateLumpsum();
 
   // Safely calculate returns percentage with NaN handling and decimal point
-    const returnsPercentage = results.investedAmount > 0 && isFinite(results.estimatedReturns / results.investedAmount)
-        ? ((results.estimatedReturns / results.investedAmount) * 100).toFixed(1)
-        : '';
+  const returnsPercentage = results.investedAmount > 0
+    ? ((results.estimatedReturns / results.investedAmount) * 100).toFixed(1)
+    : '0.0';
 
   const formatCurrency = (amount) => {
     // Handle NaN, Infinity, and invalid numbers
@@ -525,54 +525,54 @@ export default function InvestmentCalculator() {
                 </div>
 
                 <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-72 md:h-72 flex-shrink-0 md:order-2">
-                    <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
-                        <circle
-                            cx="50"
-                            cy="50"
-                            r="38"
-                            fill="none"
-                            stroke="rgb(51,65,85)" // background circle
-                            strokeWidth="10"
-                        />
-                        <circle
-                            cx="50"
-                            cy="50"
-                            r="38"
-                            fill="none"
-                            stroke="#957AE4" // updated color
-                            strokeWidth="10"
-                            strokeDasharray={`${((expectedReturn / 40) * 0.4 + (timePeriod / 40) * 0.6) * 239} 239`}
-                            strokeLinecap="round"
-                        />
+                <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="38"
+                        fill="none"
+                        stroke="rgb(51,65,85)" // background circle
+                        strokeWidth="13"
+                      />
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="38"
+                        fill="none"
+                        stroke="#957AE4" // updated color
+                        strokeWidth="13"
+                        strokeDasharray={`${results.totalValue > 0 ? (results.estimatedReturns / results.totalValue) * 239 : 0} 239`}
+                        strokeLinecap="round"
+                      />
                     </svg>
 
-                    <div className="absolute inset-0  flex flex-col items-center justify-center">
-                        <div
-                            style={{
+                  <div className="absolute inset-0  flex flex-col items-center justify-center">
+                  <div
+                      style={{
 
 
-                                fontWeight: "600", // or 400 for regular
-                                color: "#957AE4"
-                            }}
-                            className="text-md md:text-[26px]">
-                            {returnsPercentage}%
-                        </div>
-
-                        <div
-                            style={{
-
-                                fontSize: "18px",
-                                fontWeight: "400",
-                                color: "#D9D9D9",
-                                marginTop: "0.5rem"
-                            }}
-                        >
-                            Return
-
-
-                        </div>
-
+                        fontWeight: "600", // or 400 for regular
+                        color: "#957AE4"
+                      }}
+                    className="text-md md:text-[26px]">
+                      {returnsPercentage}%
                     </div>
+
+                    <div
+                  style={{
+
+                    fontSize: "18px",
+                    fontWeight: "400",
+                    color: "#D9D9D9",
+                    marginTop: "0.5rem"
+                  }}
+                >
+                  Return
+
+
+                </div>
+
+                  </div>
                 </div>
               </div>
 
