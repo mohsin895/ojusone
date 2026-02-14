@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
 
             {/*<div className="text-gray-400 text-[11px] leading-relaxed w-[225px]">*/}
-              <div className="text-gray-400 text-[11px] leading-[16px] w-[230px]">
+              <div className="text-gray-400 text-[11px] leading-[16px] w-[240px]">
                   <div>
                       {setting?.address || "INS - 540, Urbtech Trade Center, Sector 132, Noida - 201304"}
                   </div>
@@ -95,12 +95,12 @@ export default function Footer() {
 
                   {setting?.androidUrl && (
                       <a href={setting.androidUrl} target="_blank" rel="noopener noreferrer">
-                          <Image src={android} alt="Android" width={113} height={35} />
+                          <Image src={android} alt="Android" width={113} height={35} style={{ width: "113px", height: "35px" }} />
                       </a>
                   )}
                   {setting?.iosUrl && (
                       <a href={setting.iosUrl} target="_blank" rel="noopener noreferrer">
-                          <Image src={ios} alt="IOS" width={113} height={35} />
+                          <Image src={ios} alt="IOS" width={113} height={35} style={{ width: "113px", height: "35px" }} />
                       </a>
                   )}
               </div>
@@ -123,7 +123,7 @@ export default function Footer() {
               )}
               {setting?.twitter && (
                 <a href={setting.twitter} target="_blank" rel="noopener noreferrer">
-                  <Image src={twitter} alt="Twitter" width={30} height={30} />
+                  <Image src={twitter} alt="Twitter" width={30} height={30}  />
                 </a>
               )}
               {setting?.fb && (
@@ -257,7 +257,7 @@ export default function Footer() {
                         )}
                     </div>
 
-                    <div className="text-gray-400 text-[11px] leading-relaxed w-[230px]">
+                    <div className="text-gray-400 text-[11px] leading-relaxed w-[240px]">
                         {setting?.address ||
                             "INS - 540, Urbtech Trade Center, Sector 132, Noida - 201304"}
                         <br />
@@ -278,12 +278,12 @@ export default function Footer() {
 
                         {setting?.androidUrl && (
                             <a href={setting.androidUrl} target="_blank" rel="noopener noreferrer">
-                                <Image src={android} alt="Android" width={113} height={35} />
+                                <Image src={android} alt="Android" width={113} height={35} style={{ width: "113px", height: "35px" }} />
                             </a>
                         )}
                         {setting?.iosUrl && (
                             <a href={setting.iosUrl} target="_blank" rel="noopener noreferrer">
-                                <Image src={ios} alt="IOS" width={113} height={35} />
+                                <Image src={ios} alt="IOS" width={113} height={35} style={{ width: "113px", height: "35px" }} />
                             </a>
                         )}
                     </div>

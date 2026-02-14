@@ -55,7 +55,7 @@ export default function Slider() {
     const duplicatedLogos = [...logos, ...logos];
 
     // Smooth speed based on logo count
-    const scrollDuration = 35;
+    const scrollDuration = 70;
 
     // Update slider width after render
     useEffect(() => {
