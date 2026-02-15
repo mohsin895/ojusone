@@ -18,7 +18,7 @@ export default function TermOfService() {
 
             <AboutBody/>
             <section className="relative font-opensans w-[90%] max-w-6xl mx-auto py-20">
-                <h1 className="text-3xl md:text-[60px] font-semibold text-[#FFFFFF] mb-10">
+                <h1 className="text-3xl md:text-[60px] font-bold text-[#FFFFFF] mb-10">
                Terms and Conditions</h1>
 
                 <h2 className="text-[18px] font-semibold text-[#957AE4] mb-3">Welcome</h2>

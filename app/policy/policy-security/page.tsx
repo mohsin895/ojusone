@@ -13,7 +13,7 @@ export default function PolicySecurityPage() {
             <AboutBody/>
             <section className="relative font-opensans bg-black text-white mb-[100px] md:mb-[140px] overflow-hidden ">
                 <div className="relative font-opensans w-[90%] max-w-6xl mx-auto py-20">
-                    <h1 className="text-3xl md:text-[60px] font-semibold text-[#FFFFFF] mb-10">Privacy Policy</h1>
+                    <h1 className="text-3xl md:text-[60px] font-bold text-[#FFFFFF] mb-10">Privacy Policy</h1>
 
                         <h2 className="text-[18px] font-semibold text-[#957AE4] mb-3">Introduction</h2>
                         <p className="mb-4">
