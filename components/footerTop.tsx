@@ -144,13 +144,13 @@ export default function Footer() {
           <div>
             <h3 className="text-[#957AE4] font-medium text-[11px] mb-4">Royal Monarch</h3>
             <ul className="space-y-2 text-white text-[11px]">
-              <li><Link href="https://monarch.mitwebsolutions.com/about">About Us</Link></li>
-              <li><Link href="https://monarch.mitwebsolutions.com/about/culture">Our Culture</Link></li>
-              <li><Link href="https://monarch.mitwebsolutions.com/about/approach">Our Approach</Link></li>
-              <li><Link href="https://monarch.mitwebsolutions.com/about/team">Our Team</Link></li>
-              <li><Link href="#">Knowledge</Link></li>
-              <li><Link href="https://monarch.mitwebsolutions.com/career">Career</Link></li>
-              <li><Link href="https://monarch.mitwebsolutions.com/support">Support</Link></li>
+              <li><Link href="https://royalmonarch.in/about">About Us</Link></li>
+              <li><Link href="https://royalmonarch.in/about/culture">Our Culture</Link></li>
+              <li><Link href="https://royalmonarch.in/about/approach">Our Approach</Link></li>
+              <li><Link href="https://royalmonarch.in/about/team">Our Team</Link></li>
+              <li><Link href="https://royalmonarch.in/knowledge">Knowledge</Link></li>
+              <li><Link href="https://royalmonarch.in/career">Career</Link></li>
+              <li><Link href="https://royalmonarch.in/support">Support</Link></li>
               <li><Link href="/become-partner">Become a Partner</Link></li>
             </ul>
 
@@ -336,13 +336,13 @@ export default function Footer() {
                 <div>
                     <h3 className="text-[#957AE4] font-medium text-[11px] mb-4">Royal Monarch</h3>
                     <ul className="space-y-2 text-white text-[11px]">
-                        <li><Link href="https://monarch.mitwebsolutions.com/about">About Us</Link></li>
-                        <li><Link href="https://monarch.mitwebsolutions.com/about/culture">Our Culture</Link></li>
-                        <li><Link href="https://monarch.mitwebsolutions.com/about/approach">Our Approach</Link></li>
-                        <li><Link href="https://monarch.mitwebsolutions.com/about/team">Our Team</Link></li>
+                        <li><Link href="https://royalmonarch.in/about">About Us</Link></li>
+                        <li><Link href="https://royalmonarch.in/about/culture">Our Culture</Link></li>
+                        <li><Link href="https://royalmonarch.in/about/approach">Our Approach</Link></li>
+                        <li><Link href="https://royalmonarch.in/about/team">Our Team</Link></li>
                         <li><Link href="#">Knowledge</Link></li>
-                        <li><Link href="https://monarch.mitwebsolutions.com/career">Career</Link></li>
-                        <li><Link href="https://monarch.mitwebsolutions.com/support">Support</Link></li>
+                        <li><Link href="https://royalmonarch.in/career">Career</Link></li>
+                        <li><Link href="https://royalmonarch.in/support">Support</Link></li>
                         <li><Link href="/become-partner">Become a Partner</Link></li>
                     </ul>
 
